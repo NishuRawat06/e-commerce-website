@@ -20,8 +20,8 @@ export default function Timer() {
     return () => clearInterval;
   }, []);
   return (
-    <div className="pl-10">
-      <div className="border-red-500 border-l-[15px] rounded-[5px] w-[99vw] text-red-500 font-bold ">
+    <div className="pl-15">
+      <div className="border-red-500 border-l-[15px] rounded-[5px] w-[99vw] h-[5vh] text-red-500 font-bold pl-5">
         Today's
       </div>
       <div className="flex justify-start ms-4 items-end mt-10 gap-15">

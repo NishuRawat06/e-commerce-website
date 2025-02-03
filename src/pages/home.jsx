@@ -1,12 +1,15 @@
 import React from 'react';
-import Sidebar from '../components/sidebar';
-import Banner from '../components/banner';
-import Flashcards from '../components/flashcards';
-import Timer from '../components/timer';
-import Category from '../components/category';
-import Bestseller from '../components/bestseller';
+import Sidebar from '../components/Sidebar';
+import Banner from '../components/Banner';
+import Flashcards from '../components/Flashcards';
+import Timer from '../components/Timer';
+import Category from '../components/Category';
+import Bestseller from '../components/Bestseller';
 import Advertisment from '../components/advertisment';
-import Product from '../components/products';
+import Product from '../components/Products';
+import Newarrival from '../components/Newarrival';
+import Services from '../components/Services';
+import Footer from '../components/footer';
 export default function Home(){
     return(
       <div>
@@ -21,6 +24,9 @@ export default function Home(){
           <Bestseller/>
           <Advertisment/>
           <Product/>
+          <Newarrival/>
+          <Services/>
+          <Footer/>
         </div>
       </div>
     

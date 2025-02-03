@@ -44,34 +44,34 @@ export default function Product() {
       price: "₹300",
     },
     {
-        id: 7,
-        img: "/product7.jpeg",
-        alt: "product7",
-        desc: "Bellavita perfume set ",
-        price: "₹500",
-      },
-      {
-        id: 8,
-        img: "/product8.jpeg",
-        alt: "product8",
-        desc: "denim jacket ",
-        price: "₹1000",
-      },
+      id: 7,
+      img: "/product7.jpeg",
+      alt: "product7",
+      desc: "Bellavita perfume set ",
+      price: "₹500",
+    },
+    {
+      id: 8,
+      img: "/product8.jpeg",
+      alt: "product8",
+      desc: "denim jacket ",
+      price: "₹1000",
+    },
   ];
   return (
-    <div className="pl-10">
-      <div className="border-red-500 border-l-[15px] rounded-[5px] w-[99vw] text-red-500 font-bold">
+    <div className="pl-15">
+      <div className="border-red-500 border-l-[15px] rounded-[5px] w-[99vw] h-[5vh] text-red-500 font-bold pl-5">
         Our Products
       </div>
       <div className="text-3xl font-bold pt-[25px]">Explore our products</div>
-      <div className="grid grid-cols-4 grid-rows-2 gap-4">
+      <div className="grid grid-cols-4 grid-rows-2 gap-10 mt-20 w-[90vw]">
         {cards.map((card) => (
           <div key={card.id} className="relative">
             <div>
               <img
                 src={card.img}
                 alt={card.alt}
-                className="w-[15vw] h-[28vh] relative"
+                className="w-[20vw] h-[28vh] relative"
               />
               <i className="fa-regular fa-heart absolute top-2 right-2 text-xl text-gray-600 cursor-pointer"></i>
               <i className="fa-solid fa-eye absolute top-15 right-2 text-xl text-gray-600 cursor-pointer"></i>
@@ -88,6 +88,7 @@ export default function Product() {
           </div>
         ))}
       </div>
+      <button className="bg-red-500 w-[15vw] h-[5vh] rounded-[5px] mt-[30px] ml-[550px]">view all products</button>
     </div>
   );
 }

@@ -1,11 +1,13 @@
 import './App.css'
 import React from 'react'
 import{Route,Routes} from'react-router-dom'
-import About from './pages/about'
-import Contact from './pages/contact'
-import Home from './pages/home'
-import Signup from'./pages/signup'
-import Navbar from './components/nav'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Signup from'./pages/Signup'
+import Navbar from './components/Nav'
+import Profile from './pages/profile'
+import Productdesc from './pages/Productdesc'
 
  function App() {
   return (
@@ -16,6 +18,8 @@ import Navbar from './components/nav'
          <Route path='/contact' element={<Contact/>}/>
          <Route path='/about' element={<About/>}/>
          <Route path='/signup' element={<Signup/>}/>
+         <Route path='/profile' element={<Profile/>}/>
+         <Route path='/product/:pid' element={<Productdesc/>}/>
         </Routes>
       </div>
   )

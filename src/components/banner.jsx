@@ -32,13 +32,13 @@ export default function Banner(){
                 {slides.map((slide,index) => (
                     index===currentind&&(
                     <div key={slide.id} className="w-full flex-shrink-0">
-                        <img src={slide.image} alt={slide.alt} className="h-100 w-300 object-fill"/>
+                        <img src={slide.image} alt={slide.alt} className="h-[350px] w-277 object-fill pl-5"/>
                     </div> 
                     )
                 ))}
             </div>
             <button  className="font-extrabold" onClick={prevslide} >&gt;</button>
-            <div className="absolute bottom-20 left-1/2 transform flex gap-2">
+            <div className="absolute bottom-45 left-1/2 transform flex gap-2">
              {slides.map((slide,index)=>
               <button
                key={slide.id} 

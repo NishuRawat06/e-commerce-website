@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Flashcards() {
   let cards = [
     {
@@ -7,7 +8,7 @@ export default function Flashcards() {
       alt: "blush",
       desc: "pixi by petra on the glow blush ruby ",
       price: "₹1950",
-      discount:"-40%"
+      discount:"-40%",
     },
     {
       id: 2,
@@ -15,7 +16,7 @@ export default function Flashcards() {
       alt: "heels",
       desc: "pretty bow black platform heels ",
       price: "₹1099",
-      discount:"-35%"
+      discount:"-35%",
     },
     {
       id: 3,
@@ -24,6 +25,7 @@ export default function Flashcards() {
       desc: "women colourblock hoodie ",
       price: "₹630",
       discount:"-30%"
+
     },
     {
       id: 4,
@@ -44,11 +46,12 @@ export default function Flashcards() {
   ];
   return (
     <div className="flex flex-col justify-center items-center">
-    <div className="flex justify-around mt-14 pl-10 gap-5">
+    <div className="flex justify-around mt-14 pl-15 gap-5">
       {cards.map((card) => (
         <div key={card.id} className="relative">
-          <div>
+          <div><Link to={`/Product/${card.alt}`}>
             <img src={card.img} alt={card.alt} className="w-[18vw] h-[28vh] relative" />
+            </Link>
             <i className="fa-regular fa-heart absolute top-2 right-2 text-xl text-gray-600 cursor-pointer"></i>
             <i className="fa-solid fa-eye absolute top-15 right-2 text-xl text-gray-600 cursor-pointer"></i>
             <div className="w-14 h-7 text-center rounded-[5px] absolute top-2 left-2 bg-red-500">{card.discount}</div>
